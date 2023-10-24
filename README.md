@@ -20,7 +20,7 @@ This is a modified version of  hangman game where a user dies by falling into th
 
 **Play the game:**
 [Play Game](https://sabbellasri.github.io/fse_23_hangman/)
-[Code](https://github.com/nickmackenzie/hangman)
+[Code](https://github.com/sabbellasri/fse_23_hangman)
 
 **Next Steps:**
 I would like refactor the code a bit better with the way I share functions with the normal mode and arcade mode. I basically just copied and pasted my whole JS file twice to get the two modes and I think there might be a better way to do this. Also, I feel like there must be a instructions button which must give a clear picture of how to play.

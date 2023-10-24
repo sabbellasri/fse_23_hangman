@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hangman Game</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Open+Sans&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/4ee0467ea4.js"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="gameboard">
+        <div id="input-wrappers">
+          <div id="normalInput" class="input-container">
+            <button id="playBtn"><i class="fas fa-play fa-2x"></i></button>
+            <div class="guess">
+              <input placeholder="Enter a Letter" id="player-guess" type="text"
+                maxlength="1" />
+            </div>
+          </div>
+          <div id="campaign-container">
+            <button id="campBtn">
+              <i class="fas fa-play fa-2x"></i>
+            </button>
+            <div class="guess">
+              <input placeholder="Enter a Letter" id="arcade-guess" type="text"
+                maxlength="1" />
+            </div>
+          </div>
+        </div>
+        <div id="gamemode">
+          <button id="normal-mode"><i class="fas fa-user-tie fa-4x"></i>Start</button>
+  
+        </div>
+        <div class="water-block">
+          <div id="river"></div>
+          <img id="waterfall" src="img/waterfall.png" />
+          <div id="player"></div>
+        </div>
+        <div id="notification-winner">
+          <p id="winner">Keep it going!</p>
+        </div>
+        <div id="notification-completed">
+          <p id="completed">You Won press play button to restart!</p>
+        </div>
+        <div id="notification-lost">
+          <p id="lost">You Lost press play button to restart!</p>
+        </div>
+        <div id="notification-double-letter">
+          <p id="winner">You already guessed this letter!</p>
+        </div>
+        <div id="notification-entered-letter">
+          <p id="winner">Oops! You already entered this wrong letter </p>
+        </div>
+        <div id="trophyBox">
+          <div class="circle"><i class="fas fa-trophy fa-4x"></i></i></div>
+          <div class="trophy-title">Trophy Unlocked:</div>
+          <div id="trophy-txt">You Lost!</div>
+        </div>
+      </div>
+      <div class="word-wrap">
+        <h2 class="title">Guess Words And Escape Death!</h2>
+        <div class="showGamemode"><button id="modeBtn"><h1>Settings</h1></button>
+        
+        </div>
+        <div class="modal-background" id="modal">
+          <div class="modal-content">
+              <label for="slider1">Guesses:</label>
+              <input type="range" id="slider1" name="slider1" min="2" max="10" step="1" value="2">
+              <p><span id="Guesses">2</span></p>
+              <label for="slider2">Words:</label>
+              <input type="range" id="slider2" name="slider2" min="2" max="16" step="1" value="2">
+              <p><span id="Words">2</span></p>
+              <button class="bu1" id="okdok">ok</button> 
+              <button class="bu1" id="close-modal-button">Cancel</button>
+          </div>
+      </div>
+        <div id="playerInfo">
+          <label for="countdown">Words Left:</label>
+          <p><span id="wordcount">2</span></p>
+        </div>
+        <div class="mystery-word">
+          <h2>Word:</h2>
+          <div id="word"></div>
+        </div>
+        <div class="guess-letter">
+          <h2>Guessed Letters:</h2>
+          <div id="guessed"></div>
+        </div>
+        <div class="hint-box">
+          <button id="show-hint">
+            <img id="racoon" src="img/hintgiver.png" width="80px" alt="" />
+            <div class="speech-bubble">Need a hint? Click me!</div>
+          </button>
+          <div id="hint"></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -19,7 +19,7 @@ This is a modified version of  hangman game where a user dies by falling into th
  
 
 **Play the game:**
-[Play Game](https://nickmackenzie.github.io/hangman/)
+[Play Game](https://sabbellasri.github.io/fse_23_hangman/)
 [Code](https://github.com/nickmackenzie/hangman)
 
 **Next Steps:**
